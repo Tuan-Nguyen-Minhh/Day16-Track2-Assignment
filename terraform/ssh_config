@@ -1,0 +1,12 @@
+Host bastion
+    HostName 18.215.34.44
+    User ubuntu
+    IdentityFile lab-key
+    StrictHostKeyChecking no
+
+Host lab-cpu
+    HostName 10.0.10.197
+    User ubuntu
+    IdentityFile lab-key
+    ProxyJump bastion
+    StrictHostKeyChecking no
